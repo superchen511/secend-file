@@ -3,6 +3,10 @@
 <br/>    换行标签
 <h1>...</h1>标题字(最大)
 <h6>...</h6>标题字(最小)
+
+
+
+
 <b>...</b>粗体字
 <strong>...</strong>粗体字(强调) （同上效果略同）
 <i>...</i>斜体字
@@ -63,6 +67,432 @@
 <form>表单域  可以将里面的信息交给后台
 input 单标签
 <br>换行
-<label>标签中的fro对应的值要与input中的id的值要对应   用于用户在鼠标点到文字也可以选定
+<label>标签中的for对应的值要与input中的id的值要对应   用于用户在鼠标点到文字也可以选定
 <select>  <option>
 <texterea>文本域标签 用于字比较多的情况
+
+
+
+css：文本属性
+font-weight 字体粗细
+font-style 字体样式
+font： 字体连写
+文本对齐：
+text-align:
+文本修饰
+text-decoration
+文本缩进  em相对单位
+    text-indent:
+行间距
+line-height
+行高-一般和盒子高度一样
+line-height
+背景位置  分为x y 也可用center top
+background-position;x y
+背景图像固定：
+background-attachment; fixed 表示背景固定在哪里
+
+背景简写：background:
+不用按顺序
+
+背景半透明：
+background: rgba(0,0,0,0)
+
+--权重叠加：
+继承的权重为零
+z-index；1可以提高显示权重
+
+链接伪类选择器  要另外写在最外面
+a:link      选择所有未被访问的链接
+a:visited    选择所有已经被访问过的链接
+a:hover      选择鼠标指针位于其上的链接
+a:active     选择活动链接
+
+
+css元素显示模式
+块级元素：一行只能放一个块级元素-可以设置宽高
+行内元素：一行能放多个行内元素-不能直接设置宽高
+块级行内元素： display: inline-block;
+把行内元素转化为块级元素：display:block;设置后就能设置宽高了
+snipaste工具
+
+
+盒子模型-可简写
+border边框：
+border-width  border-style  border-color
+content内容
+padding内边距
+margin外边距
+margin:0 auto;能让盒子居中对其
+当想让盒子内的元素剧中对其需要在父类中添加text-align:center;
+盒子嵌套塌陷问题：为父类添加边框或添加overflow:hidden
+
+清除内外边距 一般都要有：
+* {
+padding: 0;
+margin: 0;
+}
+清楚li标签的小园点
+li{
+list-style: none;
+}
+
+盒子阴影：box-shadow:  10px 10px 10px 10px rgba(0,0,0, .3)
+
+
+float:
+特点 ：脱标
+脱离标准流的控制  浮动的盒子不在保留原来位置
+添加了浮动后盒子会有行内块元素特点
+
+
+清除浮动：
+原因：有时候不方便给父盒子高度 会影响下面的标准流
+方法：给父类添加一个overflow: hidden;
+
+定位：
+position: relative; 相对定位
+position: absolute; 绝对定位
+粘性定位 sticky：position: sticky
+position:fixed 固定定位
+提高层级 z-index: 1;
+
+
+显示隐藏：
+display:none;隐藏元素 不保留位置
+display:block:显示元素
+visibility:hidden; 隐藏元素保留位置  visible让元素显示
+overflow: 溢出隐藏
+
+字体图标：
+网站  icomoon.io
+
+css三角制作：
+设置一个高度宽度为0的盒子 在定义边框即可
+
+鼠标样式：
+cursor: pointer;  小手
+cursor: move;   移动
+cursor: text   文本
+cursor: not-allowed;   禁止
+
+在图片后面加 vertical-align: middel； 可让后面文字居中对其
+
+单行文字溢出用省略号表示：
+三步：
+white-space: nowrap; 不强制换行
+overflow: hidden; 溢出隐藏
+text-overfolow: ellipsis;
+
+outline: none; 让文本框点击时无边框
+
+
+<video>标签
+
+autoplay	autoplay	如果出现该属性，则视频在就绪后马上播放。
+controls	controls	如果出现该属性，则向用户显示控件，比如播放按钮。
+height	pixels	设置视频播放器的高度。
+loop	loop	如果出现该属性，则当媒介文件完成播放后再次开始播放。
+muted	muted	规定视频的音频输出应该被静音。
+poster	URL	规定视频下载时显示的图像，或者在用户点击播放按钮前显示的图像。
+preload	preload
+如果出现该属性，则视频在页面加载时进行加载，并预备播放。
+如果使用 "autoplay"，则忽略该属性。
+src	url	要播放的视频的 URL。
+width	pixels	设置视频播放器的宽度。
+
+
+新增表单标签
+required  表示表单里必须要填东西
+placeholder  提示文本
+auto   自动获取焦点
+
+
+新增结构伪类选择器：
+:frist-child
+:last-child
+:nth-child(n)  n可以为关键字  例如even odd
+
+伪元素选择器：
+::before 在元素内部的前面插入内容
+::after  在元素内部的后面插入内容
+两者中间必须写content属性
+是行类元素 可以设置margin值
+
+
+css3盒子模型
+box-sizing: border-box; 这样不会撑开盒子
+
+2D转换
+translate：translate(x,y)
+translate: translateX(100px);或者百分比
+旋转
+transform:rotate(度数deg)
+转换中心
+transfrom-origin: x y;
+transfrom:scale(1,1);
+可同时使用但是需要先写位移；
+
+
+3D转换
+多加了一个z轴
+透视perspective 一般写在被观察元素的父盒子上面
+transform: rotate3d(x,y,z,deg);
+3D呈现 transform-style:perspective-3d 写在父盒子上面
+
+border-radius: 50%;能让正方形变成圆形
+
+
+css动画：
+过度效果：transition;
+1定义动画
+@keyframes move(名字):
+0%{
+状态
+}
+100%{
+状态
+}
+2到需要使用动画的盒子调用动画
+animation-name:move;
+3持续时间
+animation-duration:2s;
+4.0%可以用from 100%可以用to
+
+
+
+
+
+js的组成
+1.js基础语法
+2.dom
+3.bom
+
+引入js代码
+<script src=""></script>
+
+alert:弹出警示框
+prompt：让用户输入
+console：程序员看的
+
+声明变量
+var n;
+n = x;
+简写为
+var n = x;
+
+/n表示换行
+/t 缩进
+/blank
+.length 检查字符串长度
+typeof 可以检测类型
+console.log(String(n))强制转化成字符串
+parseInt 转化为整数
+parseFloat
+隐式转换：
+用到 + — *等会自动转化整数
+
+n++和++n有区别
+
+if (判断条件) {
+    执行语句;
+}
+
+if (判断条件) {
+    执行语句;
+    else{
+        执行语句；
+    }
+}
+
+if (判断条件) {
+    执行语句;
+    else if (判断条件){
+        执行语句；
+    }
+    else {
+    执行语句；
+    }
+}
+
+满足那个执行那个都不满足执行default
+swich(){
+    case (判断条件)：
+        执行语句;
+        break;
+    case (判断条件)：
+        执行语句;
+        break;
+    case (判断条件)：
+        执行语句;
+        break;
+    default:
+        执行语句；
+}
+
+
+for 循环：
+for(var i=1;i<=100;i++){
+
+}
+
+while循环
+while(){
+
+}
+
+
+冒泡排序：
+
+函数：
+声明函数的方法：
+function 函数名（形参）{
+   //函数体
+}
+调用函数方法：
+函数名（实参）;
+
+参数可以有很多个，实参少于形参则整个没用多余的化多余的没用。
+
+
+retrun 看p119-120
+
+arguments中储存了函数中的所有传递过来的实参
+founction fn() {
+    console.log(arguments);
+}
+fn(1,2,3);
+结果会是[1，2，3]
+
+
+
+对象：
+var fn={
+    name:chen,
+    sex:nan,
+    doing:founction fn(){
+            函数体
+    }
+}
+
+调用对象的两种方式
+1.fn['name(属性名)']
+2.fn.name
+
+
+
+用new obj创建对象：
+var obj = new Object();
+    obj.name=chen;
+    obj.sex=nan;
+    obj.fn= function(){
+        函数体；
+    }
+
+
+用构造函数创建对象：
+founction Fn(name,age){   //首字母大写为了区分//
+    this.name=name;
+    this.age=age;
+    this.fn=founction(){
+
+    }
+}
+调用 要用new加构造函数名
+var liudehua = new Fn(刘德华，18)；
+liudehua.name
+liudehua['age']
+liudehua.fn
+
+
+
+for in 遍历对象:
+var fn={
+    name:chen,
+    sex:nan,
+    doing:founction fn(){
+            函数体
+    }
+}
+for (var k in obj) {
+     console.log(k);输出的是变量名。
+     console.log(obj[k]);输出的是变量值。
+}
+
+
+
+
+
+内置对象：
+查阅文档MDN W3C;
+
+var arr= new Array();创建了一个数组对象
+var object= new Object();创建了一个对象实力
+
+date() 日期对象 是一个构造对象 需要使用new来调用
+
+
+
+Array.isArray(n) 可以判断n是否为数组
+push、unshift 数组加元素
+pop、shift 数据减元素
+indexOf('要索引的元素'，从n个开始)  可以返回元素在数组中的位置
+charAt() 根据位置返回字符
+
+
+
+重点：数组去重
+核心算法：遍历旧数组，拿着旧数组去新数组里检查看有无一样的没有就传进去。
+function unique(arr){
+    var newarr = [];
+    for(var i = 0; i<arr.length;i++){
+    if(newarr.indexOf(i)===-1){
+        newarr.push(arr[i]);
+        }
+    }
+    return newarr;
+}
+
+
+
+
+作用域：
+在函数外面的是全局作用域，整个项目都有效
+在函数内部是局内作用域，只在函数内部起作用
+为了防止名字的冲突。 
+
+
+预解析：
+js引擎运行js分为两步  预解析  代码执行
+与解析 js引擎会把js里面所有的var 还有 function 提升到作用域的最前面
+代码执行 会按照代码书写的顺序重上往下走
+
+变量提升：就是把var=n这一步提升到最前面   但是不提升赋值的操作
+函数提升： 会把声明函数这一步提升到最前面面 不提升调用函数
+
+
+直接赋值无论在哪里都是全局变量
+
+
+
+
+简单数据类型 和复杂数据类型 栈 和 堆
+
+
+
+
+
+
+
+
+
+移动端学习：
+视口标签：
+<meta name="viewport" content="width-device-width",initial-scale=1.0,maximum-scale=1.0.minimum-scale=1.0,user-scalable="no">
+移动端布局
+流式布局：一般用百分比设置宽度 也要动过max-width和min-width来限制防止盒子里的内容放不下
+
+
+
+
+

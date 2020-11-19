@@ -1,0 +1,205 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*body{
+	background: */
+/*}*/
+.w{
+	width: 1200px;
+	margin: 0 auto;
+}
+.head{
+	height: 80px;
+
+}
+.logo{
+	float: left;
+	width: 100px;
+	height: 80px;
+	background: red;
+}
+.nav{
+	float: left;
+	margin-left: 30px; 
+}
+.nav ul li{
+	float: left;
+	padding: 0 40px;
+}
+.nav ul li a{
+	display: block;
+	height: 39px;
+	margin-top: 25px; 
+	color: #050505;
+}
+.nav ul li a:hover{
+	border-bottom: 1px solid red;
+}
+.serch{
+	float: left;
+	width: 300px;
+	height: 80px;
+	margin-left: 40px;
+	
+}
+.serch input{
+	float: left;
+	margin-top: 20px; 
+	height: 40px;
+	width: 215px;
+	border: 1px solid #00a4ff;
+	border-right: 0; 
+	outline: none;
+}
+.serch button{
+	float: left;
+	margin-top: 20px; 
+	height: 40px;
+	width: 38px;
+	/*background: url();*/
+	border: 0;
+}
+.user{
+	float: right;
+	margin-right: 40px; 
+	line-height: 40px;
+}
+
+/*banner*/
+.banner{
+	height: 421px;
+	background: blue;
+}
+.banner .left{
+	float: left;
+	height: 421px;
+	width: 190px;
+	background: rgba(0,0,0,0.3);
+}
+.banner .left ul{
+	padding: 0 25px;
+}
+.banner .left ul li{
+	height: 46px;
+	line-height: 46px;
+}
+.banner .left ul li a{
+	color: #fff;
+	font-size: 16px;
+}
+.banner .left ul li a:hover{
+	color: blue;
+}
+.banner .left ul li span{
+	float: right;
+}
+.banner .right{
+	float: right;
+	height: 320px;
+	width: 220px;
+	margin-top: 50px;
+	background: pink;
+}
+.banner .right h2{
+	height: 80px;
+	width: 220px;
+	background: #00a4ff;
+	color: #fff;
+	text-align: center;
+	line-height: 80px;
+	font-size: 20px;
+	
+}
+.banner .right .cruse1{
+	height: 240px;
+	
+	background: #fff;
+	padding: 5px 20px;
+}
+.cruse1 ul li{
+	padding: 10px 0px;
+	border-bottom: 1px solid black; 
+
+}
+.cruse1 .more{
+	display: block;
+	width: 150px;
+	height: 40px;
+	border: 1px solid blue;
+	text-align: center;
+	line-height: 40px;
+	color: blue;
+	font-size: 16px;
+	font-weight: 700;
+	margin: 5px 10px;
+}
+.rex input{
+	height: 36px;
+	width: 45px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+.jp {
+	margin-top: 10px;
+	height: 50px;
+	background: skyblue;
+	box-shadow:  3px 9px 3px -6px rgba(0,0,0, .5)
+}
+.jp .left{
+	float: left;
+	margin: 13px 30px;
+	color: blue;
+}
+.jp ul{
+	float: left;
+	margin-top: 16px;
+	margin-left: 30px; 
+}
+.jp .middel li {
+	display: inline-block;
+	padding: 0 25px;
+	border-left: 1px solid red;
+}
+.jp .right{
+	float: right;
+	padding: 15px 30px;
+}
+.jp .right a{
+	font-size: 14px;
+}	
+.box {
+	margin-top: 30px;
+}
+.box .head{
+	height: 45px;
+}
+.box .head h4{
+	float: left;
+	font-size: 18px;
+	font-weight: 400;
+}
+.box .head a{
+	float: right;
+	font-size: 14px;
+}
+.box .body ul li{
+	float: left;
+	width: 228px;
+	height: 271px;
+	background: pink;
+	margin-right: 15px; 
+	margin-bottom: 15px; 
+}
+.box .body ul .r1{
+	margin-right: 0; 
+}
+.box .body ul .r2{
+	margin-right: 0; 
+}

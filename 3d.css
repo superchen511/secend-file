@@ -1,0 +1,88 @@
+
+body{
+	perspective: 3000px;
+
+}
+.baba{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 50px auto;
+	transition: all 1s;
+	transform-style: preserve-3d; 
+}
+.baba div{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+	background: pink;
+}
+.baba:hover{
+	transform: rotateY(60deg);
+}
+.baba div:last-child{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 300px;
+	height: 300px;
+	background: blue;
+	transform: rotateX(60deg);
+}
+body{
+	height: 1300px;
+}
+.zp{
+	position: relative;
+	width: 300px;
+	height: 200px;
+	margin: 400px auto;
+/*	background: purple;*/
+	transform-style: preserve-3d;
+	animation: move 20s linear infinite;
+	transition: 3s;
+}
+.zp:hover{
+	animation-play-state: paused; 
+}
+.zp div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+/*	background: url(images/1.jpg) no-repeat;*/
+}
+@keyframes move{
+	0% {
+		transform: rotateY(0);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
+}
+.zp div img{
+	width: 100%;
+	height: 100%;
+}
+.zp div:nth-child(1){
+	z-index: 1;
+	transform: translateZ(450px);
+}
+.zp div:nth-child(2){
+	transform: rotateY(60deg) translateZ(450px);
+}
+.zp div:nth-child(3){
+	transform: rotateY(120deg) translateZ(450px);
+}
+.zp div:nth-child(4){
+	transform: rotateY(180deg) translateZ(450px);
+}
+.zp div:nth-child(5){
+	transform: rotateY(240deg) translateZ(450px);
+}
+.zp div:nth-child(6){
+	transform: rotateY(300deg) translateZ(450px);
+}
