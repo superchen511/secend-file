@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?tomleg');
+  src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?tomleg') format('truetype'), url('../fonts/icomoon.woff?tomleg') format('woff'), url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  font-size: 50px;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 21.33333333px;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 25.6px;
+  }
+}
+@media screen and (min-width: 400px) {
+  html {
+    font-size: 26.66666667px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 27.6px;
+  }
+}
+@media screen and (min-width: 424px) {
+  html {
+    font-size: 28.26666667px;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 540px) {
+  html {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 720px) {
+  html {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 50px;
+  }
+}
+body {
+  min-width: 320px;
+  width: 15rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #f2f2f2;
+}
+.topfix {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15rem;
+  height: 1.76rem;
+  background-color: #FFDB47;
+}
+.topfix .lf {
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: 0.3rem 0.5rem 0.14rem 0.48rem;
+}
+.topfix .lf img {
+  width: 100%;
+  height: 100%;
+}
+.topfix .fff {
+  flex: 1;
+}
+.topfix .fff .input {
+  position: relative;
+  width: 10rem;
+  height: 1.36rem;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  margin: 0.2rem 0.6rem 0.2rem 0.6rem;
+  line-height: 1.2rem;
+}
+.topfix .fff .input::before {
+  font-family: 'icomoon';
+  content: "\e986";
+  font-size: 0.72rem;
+  color: #333;
+  margin-left: 0.7rem;
+}
+.topfix .fff .input a {
+  font-size: 0.6rem;
+  color: #030303;
+}
+.topfix .ri {
+  width: 0.72rem;
+  height: 1.2rem;
+  margin: 0.3rem 0.48rem 0.14rem 0.5rem;
+}
+.topfix .ri img {
+  width: 100%;
+  height: 100%;
+}
+.lb {
+  width: 14.04rem;
+  height: 5.2rem;
+  background-color: pink;
+  margin-top: 1.76rem;
+  margin-left: 0.48rem;
+}
+.lb img {
+  height: 100%;
+  width: 100%;
+}
+.lb2 {
+  height: 5rem;
+  display: flex;
+}
+.lb2 a {
+  flex: 1;
+}
+.lb2 a img {
+  height: 100%;
+  width: 100%;
+}
+.list ul {
+  height: 5.6rem;
+  margin: 0;
+  padding: 0;
+}
+.list ul li {
+  display: flex;
+  flex-wrap: wrap;
+  height: 5.68rem;
+  width: 15rem;
+}
+.list ul li a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 2.84rem;
+  width: 20%;
+  font-size: 0.6rem;
+  color: #666;
+}
+.list ul li a span {
+  margin: 0.2rem 0.6rem;
+  height: 1.68rem;
+  width: 1.68rem;
+}
+.list ul li a span img {
+  height: 100%;
+  width: 100%;
+}
+.hb {
+  margin-top: 40px;
+  width: 15rem;
+}
+.hb ul {
+  margin: 0;
+  padding: 0;
+  height: 4.6rem;
+}
+.hb ul li {
+  display: flex;
+  height: 4.6rem;
+  width: 15rem;
+}
+.hb ul li a:nth-child(1) {
+  flex: 2;
+}
+.hb ul li a:nth-child(n+2) {
+  flex: 1;
+  border-left: 1px solid #fff;
+}
+.hb ul li a img {
+  height: 100%;
+  width: 100%;
+}

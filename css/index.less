@@ -1,0 +1,159 @@
+@base:50;
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+  a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@import "common";
+body{
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+.topfix{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15rem;
+    height: 88rem/ @base;
+    background-color: #FFDB47;
+    .lf{
+        width: 36rem/ @base;
+        height: 60rem/ @base;
+        margin: 15rem/@base 25rem/@base 7rem/@base 24rem/@base;
+        img{          
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .fff{
+        flex: 1;
+        .input{
+            position: relative;
+            width: 500rem/ @base;
+            height: 68rem/ @base;
+            border-radius: 40rem/ @base;
+            background-color: #fff;
+            margin: 10rem/ @base 30rem/ @base 10rem/ @base 30rem/ @base;
+            line-height: 60rem/ @base;
+            &::before{
+                    font-family: 'icomoon';
+                    content: "\e986";
+                    font-size: 36rem/ @base;
+                    color: #333;
+                    margin-left: 35rem/ @base;
+                }
+                a{
+                    font-size: 30rem/ @base;
+                    color: #030303;
+                }
+        }
+    }
+    .ri{
+        width: 36rem/ @base;
+        height: 60rem/ @base;
+        margin: 15rem/@base 24rem/@base 7rem/@base 25rem/@base;
+        img{          
+            width: 100%;
+            height: 100%;  
+        }
+    }
+}
+.lb{
+    width: 702rem/ @base;
+    height: 260rem/ @base;
+    background-color: pink;
+    margin-top: 88rem/ @base;
+    margin-left: 24rem/ @base;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+.lb2{
+    height: 250rem/ @base;
+    display: flex;
+    a{
+        flex: 1;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.list{
+    ul{
+        height: 280rem/ @base;
+        margin: 0;
+        padding: 0;
+        li{
+            display: flex;
+            flex-wrap: wrap;
+            height: 284rem/ @base;
+            width: 750rem/ @base;
+            a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                height: 142rem/ @base;
+                width: 20%;                
+                font-size: 30rem/ @base;
+                color: #666;
+                span{
+                    margin: 10rem/ @base 30rem/ @base;
+                    height: 84rem/ @base;
+                    width: 84rem/ @base;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }          
+                }
+            }
+        }
+    }
+}
+.hb{
+    margin-top: 40px;
+    width: 750rem/ @base;
+    ul{
+        margin: 0;
+        padding: 0;
+        height: 230rem/ @base;
+        li{
+            display: flex;
+            height: 230rem/ @base;
+            width: 750rem/ @base;
+            a{
+                &:nth-child(1){
+                    flex: 2;
+                }
+                &:nth-child(n+2){
+                    flex: 1;
+                    border-left: 1px solid #fff;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
